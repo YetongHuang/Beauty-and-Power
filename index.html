@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty and Power</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+
+    /* Basic styling for the audio element */
+    audio {
+      width: 100%;  /* Make the audio player fill its container */
+      max-width: 200px;  /* Limit the maximum width */
+      border-radius: 10px;  /* Rounded corners */
+      box-shadow: 0 4px 10px rgba(220, 143, 151, 0.2);  /* Shadow for depth */
+      position: fixed;  /* Position fixed relative to the viewport */
+      top: 30px;        /* Distance from the top of the page */
+      right: 650px;      /* Distance from the right of the page */
+      z-index: 1000;    /* Ensure it's above other elements */
+    }
+    
+    /* Optional: Adding a background behind the audio controls */
+    audio::-webkit-media-controls-panel {
+      background-color: #5d5d5d;  /* Dark background for the control panel */
+      border-radius: 8px; /* Rounded edges */
+    }
+    
+    audio::-webkit-media-controls-play-button {
+      background-color: #f0b4b4;  /* Pink color for the play button */
+      border-radius: 50%;  /* Make the play button circular */
+    }
+
+    audio::-webkit-media-controls-volume-slider {
+      background-color: #ff6978; /* Pink color for the volume slider */
+    }
+
+    /* Safari specific styling */
+    audio::-webkit-media-controls-mute-button {
+      background-color: #ffbcbc;  /* Light color for mute button */
+    }
+
+    /* Firefox specific styles for the progress bar */
+    audio::-moz-progress-bar {
+      background-color: #ff696e;  /* Pink progress bar */
+    }
+  
+
+    img {
+      object-fit: cover;  /* Ensures image covers the entire container without distortion */
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .calligraphy-text {
+     font-family: 'Great Vibes', cursive; /* Use cursive font */
+     font-size: 4rem; /* Adjust size of text */
+      font-weight: bold; 
+      color: #96333b; /* Dark purple, change to any color you prefer */
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+      animation: flow 2s ease-in-out infinite; /* Animation */
+      transform: rotate(-30deg); /* Rotate text by -30 degrees */
+      position: absolute; /* Absolute positioning */
+      bottom: 180px; /* Position the text 200px from the top of the page */
+      left: 630px;
+    }
+
+    /* Animation to give the effect of flowing text */
+    @keyframes flow {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-10px) rotate(-2deg);
+      }
+      100% {
+        transform: translateY(0) rotate(2deg);
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+    
+  </div>
+  <div class="content">
+    <h1 class="watercolor-title">Beauty and Power</h1>
+  </div>
+ 
+  <img src="flowers.png" alt="Your Image" class="back-decoration">
+
+  <img src="lady.png" alt="Your Image" class="bottom-left-image">
+
+  <img src="emperor.png" alt="Your Image" class="top-right-image">
+
+  <img src="objects.png" alt="Your Image" class="stuff">
+
+  <img src="flower-blossoms.gif" alt="Transparent Gift" class="gif-image">
+ 
+  <img src="window_frame.png" alt="Your image" class="around">
+
+  <img src="hairpin.png" alt="Your image" class="jewerlly">
+
+  <!-- Audio autoplay loop -->
+  <audio autoplay controls>
+    <source src="Lunar-New-Year.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  
+
+
+  <a href="page2.html"> <div class="calligraphy-text">
+    Hair Pin
+  </div> </a>
+
+</body>
+</html>

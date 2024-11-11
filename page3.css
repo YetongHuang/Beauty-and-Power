@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  body {
+    background-image: url('letter-back.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+/* Image styling to position it at the bottom-right corner */
+.bodytwo{
+    position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+    bottom: -100px;         /* Distance from the bottom of the screen */
+    right: 300px;          /* Distance from the right of the screen */
+    width: 1350px;         /* Set a width for the image (optional) */
+    height: auto;  
+  }
+
+
+  /* Image styling to position it at the bottom-right corner */
+.word{
+    position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+    bottom: 0px;         /* Distance from the bottom of the screen */
+    right: 20px;          /* Distance from the right of the screen */
+    width: 400px;         /* Set a width for the image (optional) */
+    height: auto;  
+    transform: rotate(370deg);
+  }
+
+  .gif-image {
+    position: fixed;
+    width: 2000px;  /* Adjust the size of the GIF */
+    height: auto;  /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+
+  }

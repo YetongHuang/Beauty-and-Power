@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  body {
+    background-image: url('pink-back.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .girl{
+    position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+    bottom: 0px;         /* Distance from the bottom of the screen */
+    left: 0px;          /* Distance from the right of the screen */
+    width: 500px;         /* Set a width for the image (optional) */
+    height: auto;  
+  }
+
+   /* Image styling to position it at the bottom-right corner */
+   .objects{
+    position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+    top: 100px;         /* Distance from the bottom of the screen */
+    right: 30px;          /* Distance from the right of the screen */
+    width: 360px;         /* Set a width for the image (optional) */
+    height: auto;  
+  }
+
+
+    /* Image styling to position it at the bottom-right corner */
+    .objects2{
+        position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+        top: 20px;         /* Distance from the bottom of the screen */
+        right: 250px;          /* Distance from the right of the screen */
+        width: 200px;         /* Set a width for the image (optional) */
+        height: auto; 
+        transform: rotate(20deg); 
+      }
+
+  /* Image styling to position it at the bottom-right corner */
+  .objects3{
+    position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+    top: 30px;         /* Distance from the bottom of the screen */
+    right: 400px;          /* Distance from the right of the screen */
+    width: 300px;         /* Set a width for the image (optional) */
+    height: auto;
+    transform: rotate(340deg);  
+  }
+
+  /* Image styling to position it at the bottom-right corner */
+  .objects4{
+    position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+    bottom: 40px;         /* Distance from the bottom of the screen */
+    right: 500px;          /* Distance from the right of the screen */
+    width: 450px;         /* Set a width for the image (optional) */
+    height: auto;  
+  }

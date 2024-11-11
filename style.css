@@ -1,0 +1,191 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Fixed watercolour image as background */
+  body {
+    background-image: url('watercolour-image.jpg'); /* Your black-and-white watercolor image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Overlay to darken the image for text readability */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  
+  h1 {
+    font-size: 5rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+
+
+  
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+    font-family:Arial, Helvetica, sans-serif ;
+  }
+  
+/* Watercolor Calligraphy Title */
+.watercolor-title {
+    font-family: 'Great Vibes', cursive; /* Calligraphy font */
+    font-size: 6rem; /* Adjust the size as needed */
+    color: #333;
+    top: 250px; /* Place it near the top of the page */
+  left: 30%; /* Center it horizontally */
+    background: linear-gradient(135deg, #000000, #1a1a1a, #000000, #313131,#000000);
+    background-clip: text; /* Clips the background to the text */
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Makes the text color transparent, showing only the gradient */
+    position: absolute;
+    z-index: 1000; /* High z-index to ensure it's on top */
+    animation: watercolorEffect 6s ease-in-out infinite; /* Animation for flow */
+  }
+  
+  /* Text Animation (Watercolor Flow) */
+  @keyframes watercolorEffect {
+    0% {
+      background-position: -200% -200%;
+    }
+    50% {
+      background-position: 200% 200%;
+    }
+    100% {
+      background-position: -200% -200%;
+    }
+  }
+
+
+
+  /* Simulated watercolor background with smaller, more natural blotches */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Using smaller, more subtle gradients to create natural watercolor blotches */
+    background: radial-gradient(circle at 40% 40%, rgba(0, 0, 0, 0.2) 20%, transparent 60%),
+                radial-gradient(circle at 70% 20%, rgba(0, 0, 0, 0.15) 25%, transparent 70%),
+                radial-gradient(circle at 30% 60%, rgba(0, 0, 0, 0.1) 30%, transparent 75%),
+                radial-gradient(circle at 50% 80%, rgba(0, 0, 0, 0.12) 35%, transparent 80%);
+    background-blend-mode: multiply;
+    animation: watercolor 10s ease-in-out infinite;
+  }
+  
+  /* Watercolor Animation */
+  @keyframes watercolor {
+    0% {
+      background-position: -150% -150%, 200% 200%, 0% 0%, 100% 100%;
+    }
+    100% {
+      background-position: 200% 200%, -150% -150%, 0% 0%, -100% -100%;
+    }
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700; /* Bold */
+    line-height: 1.2; /* Adjust line height for better spacing */
+    letter-spacing: 1px; /* Add some space between letters */
+  }
+  
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  /* Image styling to position it at the bottom-right corner */
+  .back-decoration{
+    position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+    bottom: 0px;         /* Distance from the bottom of the screen */
+    left: 0px;          /* Distance from the right of the screen */
+    width: 650px;         /* Set a width for the image (optional) */
+    height: auto;  
+  }
+
+  /* Image styling to position it at the bottom-right corner */
+.bottom-left-image{
+    position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+    bottom: 0px;         /* Distance from the bottom of the screen */
+    left: 10px;          /* Distance from the right of the screen */
+    width: 500px;         /* Set a width for the image (optional) */
+    height: auto;         /* Maintain aspect ratio */
+
+}
+
+.top-right-image{
+    position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+    bottom: 0px;         /* Distance from the top of the screen */
+    right: 20px;          /* Distance from the right of the screen */
+    width: 530px;         /* Set a width for the image (optional) */
+    height: auto;         /* Maintain aspect ratio */
+}
+
+.stuff{
+        position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+        bottom: 0px;         /* Distance from the bottom of the screen */
+        left: 0px;          /* Distance from the right of the screen */
+        width: 180px;         /* Set a width for the image (optional) */
+        height: auto;         /* Maintain aspect ratio */
+}
+
+.around{
+    position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+    width: 2500px;         /* Set a width for the image (optional) */
+    height: auto;         /* Maintain aspect ratio */
+}
+
+.gif-image {
+    position: fixed;
+    width: 1000px;  /* Adjust the size of the GIF */
+    height: auto;  /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+
+  }
+
+  .jewerlly{
+    position: fixed;  /* Absolutely position it relative to the closest positioned ancestor (in this case, the body) */
+    bottom: 0px;         /* Distance from the bottom of the screen */
+    left: 630px;          /* Distance from the right of the screen */
+    width: 300px;         /* Set a width for the image (optional) */
+    height: auto;         /* Maintain aspect ratio */
+    transform: rotate(30deg); /* Rotate image by 45 degrees */
+}

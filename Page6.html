@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Control</title>
+    <!-- Link to the About page CSS -->
+    <link rel="stylesheet" href="Page6.css">
+
+    <style>
+        /* Gradient border */
+    .gradient-border::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        black, 
+        rgba(0, 0, 0, 0.7) 20%, 
+        rgba(128, 128, 128, 0.3) 70%, 
+        transparent
+      );
+      pointer-events: none; /* Allows interaction with underlying content */
+    }
+
+    /* Centered content */
+    .content {
+      position: relative;
+      z-index: 1;
+      font-size: 2em;
+      color: black;
+      font-family: Arial, sans-serif;
+    }
+
+
+     /* Style for the main header */
+     .golden-header {
+      font-size: 5em; /* Large font size */
+      font-weight: bold;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      color: #FFD700; /* Gold color base */
+      background: linear-gradient(45deg, #FFD700, #FFEC8B, #FFD700); /* Gold gradient */
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent; /* Makes the gradient visible in text */
+      text-shadow: 
+        0 0 10px rgba(255, 215, 0, 0.5),
+        0 0 20px rgba(255, 215, 0, 0.4),
+        0 0 30px rgba(255, 215, 0, 0.3); /* Glowing effect */
+    }
+
+    /* Shimmer effect */
+    .golden-header::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+      transform: translate(-50%, -50%) rotate(25deg);
+      mix-blend-mode: overlay;
+      opacity: 0.8;
+      animation: shine 3s infinite linear;
+    }
+
+    /* Keyframes for the shine animation */
+    @keyframes shine {
+      0% {
+        transform: translate(-50%, -50%) rotate(25deg) translateX(-100%);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(25deg) translateX(100%);
+      }
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <a href="index.html"<h1><div class="golden-header">
+        SOCIAL CONTROL
+      </div> </h1> </a>
+
+
+</body>
+
+</html>
